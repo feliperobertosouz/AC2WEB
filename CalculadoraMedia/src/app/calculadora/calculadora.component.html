@@ -1,0 +1,13 @@
+<label for="ac1">AC1:</label>
+    <input type="number" [(ngModel)]="ac1" name="ac1" ngModel required><br>
+    <label for="ac2">AC2:</label>
+    <input type="number" [(ngModel)]="ac2" name="ac2" ngModel required><br>
+    <label for="ag">AG:</label>
+    <input type="number" [(ngModel)]="ag" name="ag" ngModel required><br>
+    <label for="af">AF:</label>
+    <input type="number" [(ngModel)]="af" name="af" ngModel required><br>
+
+    <button type="button" (click)="calcularMedia()">Calcular</button><br>
+
+    <label for="resultado">Resultado:</label>
+    <input type="text" [(ngModel)]="resultado" name="resultado" readonly><br>

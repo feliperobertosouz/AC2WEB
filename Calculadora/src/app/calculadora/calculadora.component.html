@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12">
+      <div class="mb-3">
+        <label class="form-label">Num 1</label>
+        <input [(ngModel)]="num1" type="number" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Num 2</label>
+        <input [(ngModel)]="num2" type="number" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Operação</label>
+        <select class="form-select" [(ngModel)]="operacao">
+          <option value="+">Somar</option>
+          <option value="-">Subtrair</option>
+          <option value="/">Somar</option>
+          <option value="*">Subtrair</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary" (click)="calcular()">Calcular</button>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Resultado</label>
+        <input [(ngModel)]="resultado" type="number" class="form-control" />
+      </div>
+    </div>
+  </div>
